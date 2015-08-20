@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SM1-gI-va5">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="iZV-AE-eqx">
+            <objects>
+                <viewController id="SM1-gI-va5" customClass="ViewController" customModule="Implicit_Animation_CALayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FsB-xF-bvm"/>
+                        <viewControllerLayoutGuide type="bottom" id="hA8-lk-iCR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sYy-pf-ads">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cn-S9-y2w">
+                                <rect key="frame" x="189" y="285" width="30" height="30"/>
+                                <state key="normal" title="Red">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="redTouched:" destination="SM1-gI-va5" eventType="touchUpInside" id="xIR-cT-DHT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgb-ma-oQ5">
+                                <rect key="frame" x="279" y="285" width="42" height="30"/>
+                                <state key="normal" title="Green">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="greenTouched:" destination="SM1-gI-va5" eventType="touchUpInside" id="5ju-Ny-GCy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjs-Wq-wCE">
+                                <rect key="frame" x="381" y="285" width="31" height="30"/>
+                                <state key="normal" title="Blue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="blueTouched:" destination="SM1-gI-va5" eventType="touchUpInside" id="mbp-kI-3pp"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TNd-wH-mDw">
+                                <rect key="frame" x="20" y="40" width="560" height="225"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="sjs-Wq-wCE" secondAttribute="centerY" id="0r2-nN-mdT"/>
+                            <constraint firstItem="sjs-Wq-wCE" firstAttribute="leading" secondItem="Cgb-ma-oQ5" secondAttribute="trailing" constant="60" id="8Cx-HK-iB8"/>
+                            <constraint firstItem="sjs-Wq-wCE" firstAttribute="top" secondItem="TNd-wH-mDw" secondAttribute="bottom" constant="20" id="IrD-27-9Ax"/>
+                            <constraint firstItem="Cgb-ma-oQ5" firstAttribute="leading" secondItem="5cn-S9-y2w" secondAttribute="trailing" constant="60" id="cYW-VC-GuL"/>
+                            <constraint firstItem="TNd-wH-mDw" firstAttribute="top" secondItem="FsB-xF-bvm" secondAttribute="bottom" constant="20" id="dX9-Dv-jyZ"/>
+                            <constraint firstAttribute="centerX" secondItem="Cgb-ma-oQ5" secondAttribute="centerX" id="hV7-ph-cQw"/>
+                            <constraint firstAttribute="centerY" secondItem="5cn-S9-y2w" secondAttribute="centerY" id="mUx-yt-Efg"/>
+                            <constraint firstAttribute="trailing" secondItem="TNd-wH-mDw" secondAttribute="trailing" constant="20" id="n0y-Ir-AWU"/>
+                            <constraint firstAttribute="centerY" secondItem="Cgb-ma-oQ5" secondAttribute="centerY" id="yct-OY-82O"/>
+                            <constraint firstItem="TNd-wH-mDw" firstAttribute="leading" secondItem="sYy-pf-ads" secondAttribute="leading" constant="20" id="ysf-yY-PAI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="testView" destination="TNd-wH-mDw" id="oO4-mr-vXt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8W2-RV-Twh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
